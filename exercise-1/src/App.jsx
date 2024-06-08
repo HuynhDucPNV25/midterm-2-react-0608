@@ -1,24 +1,19 @@
 import React, { useState } from "react";
 function App() {
-  /* You will need to use a boolean state to manage the weather */
   const [isRaining, setIsRaining] = useState(true);
   function onSunClick() {
-    // Complete this code when we click on Sunny Time
     setIsRaining(false);
   }
 
   function onRainClick() {
-    // Complete this code when we click on Sunny Time
     setIsRaining(true);
   }
 
   function getTitle() {
-    // This function manage the H1 text, depending on the weather
     return isRaining ? "RAIN TIME" : "SUN TIME";
   }
 
   function getBackgroundColor() {
-    // This function manage the main class value, depending on the weather
     return isRaining ? "rainy" : "sunny";
   }
   console.log(isRaining);
