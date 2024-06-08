@@ -2,12 +2,10 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 
 function App() {
-  /* You will need to use many state to keep the inut values and other needs */
   const [a, setA] = useState();
   const [b, setB] = useState();
   const [sum, setSum] = useState();
   const [warning, setWarning] = useState("A and B shall be numbers!");
-  /* You will need some function to handle the key pressed and button events */
   const onAChange = (e) => {
     const value = parseInt(e.target.value);
     if (!isNaN(value)) {
